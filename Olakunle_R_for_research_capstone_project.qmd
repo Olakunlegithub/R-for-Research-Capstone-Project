@@ -154,6 +154,10 @@ anova_results <- aov(emission_kilotonne ~ products, data = project_data)
 anova_results
 ```
 
+```{r}
+summary(anova_results)
+```
+
 ### 5.2. Interpretation of the result
 
 The ANOVA test conducted to see if there is a difference in the emission between the product shows that since this p-value is greater than 0.05, the null hypothesis is accepted meaning that there is no statistically significant difference in emissions between the products at the 5% significance level.
